@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">iReceitas</string>
+    <string name="erro_listar_receitas">"Não foi possível carregar as receitas. \nToque aqui para recarregar"</string>
+
+    <string name="recipes_url">https://d17h27t6h515a5.cloudfront.net/topher/2017/May/59121517_baking/baking.json</string>
+    <string name="recipes_detail">Recipes\'s Detail</string>
+    <string name="recipes_steps">Recipe\'s Steps</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="reload_image">reloadImage</string>
+    <string name="widget_image">Widget Image</string>
+    <string name="instructions">Instructions</string>
+
+</resources>

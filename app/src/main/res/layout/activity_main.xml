@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <include layout="@layout/view_progress"
+            android:layout_width="@dimen/loading_margin"
+            android:layout_height="@dimen/loading_margin"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/areaErro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_card_erro_view"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_width="@dimen/load_img_size"
+            android:layout_height="@dimen/load_img_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:src="@mipmap/ic_reload"
+            android:contentDescription="@string/reload_image"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textMsgErroView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_medium"
+            tools:text="@string/erro_listar_receitas"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
